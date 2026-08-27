@@ -1,0 +1,662 @@
+<body style="background-color:#E8F8FF; text-align:center;">
+
+<h1>1. Caza de colores</h1>
+
+<p>Selecciona el color celeste:</p>
+
+<button
+style="background-color: #00CED1; width:150px; height:150px; border-radius:50%;"
+onclick="alert('¡Correcto!🎉')">
+</button>
+    
+<button 
+style="background-color: #FF69B4; width:150px; height:150px; border-radius:50%;"
+onclick="alert('Intentalo otra vez')">
+</button>
+
+<button
+style="background-color: #FFD93D; width:150px; height:150px; border-radius:50%;"
+onclick="alert('Inténtalo otra vez')">
+</button>
+
+<button
+style="background-color: #4D96FF; width:150px; height:150px; border-radius:50%;"
+onclick="alert('Inténtalo otra vez')">
+</button>
+
+<button
+style="background-color: #FF9F43; width:150px; height:150px; border-radius:50%;"
+onclick="alert('Inténtalo otra vez')">
+</button>
+
+<p>💡¡Piensa bien antes de elegir!</p>
+
+   
+               
+<body style="text-align:center;">
+
+    <h1 style="color:#333;">2. ¿Qué figura es?</h1>
+
+    <p>Selecciona el triángulo:</p>
+
+    <br>
+
+    <!-- CÍRCULO -->
+    <button
+        style="width:160px; height:160px;
+        background-color:#FF69B4;
+        border-radius:50%;
+        margin:20px;
+        onclick="alert('Inténtalo otra vez')">
+    </button>
+
+    <!-- CUADRADO -->
+    <button
+        style="width:160px; height:160px;
+        background-color:#FFD93D;
+        margin:20px;
+        cursor:pointer;"
+        onclick="alert('Inténtalo otra vez')">
+    </button>
+
+    <!-- TRIÁNGULO -->
+    <button
+        style="width:160px; height:160px;
+        background-color:#00CED1;
+        clip-path:polygon(50% 0%, 0% 100%, 100% 100%);
+        margin:20px;
+        cursor:pointer;"
+        onclick="alert('¡Correcto!🎉')">
+</button>
+    
+    <!-- RECTÁNGULO -->
+    <button
+        style="width:220px; height:140px;
+        background-color:#4D96FF;
+        margin:20px;
+        cursor:pointer;"
+        onclick="alert('Inténtalo otra vez')">
+    </button>
+
+    <br><br>
+
+    <p>💡¡Observa bien las figuras antes de elegir!</p>
+
+</body>
+</html>
+
+
+
+
+<body style="text-align: center;">
+
+<h1>3. Cuenta los objetos</h1>
+
+<p>¿Cuántas manzanas hay?</p>
+
+<div style="font-size:150px;">
+     🍎🍎🍎
+</div>
+
+<br>
+
+<button onclick="document.getElementById('mensaje3').innerHTML='¡Correcto! Hay 3 manzanas 🎉'">
+3
+</button>
+
+<button onclick="document.getElementById('mensaje3').innerHTML='Inténtalo otra vez'">
+2
+</button>
+
+<button onclick="document.getElementById('mensaje3').innerHTML='Inténtalo otra vez'">
+4
+
+</button>
+
+<p id="mensaje3" style="font-size:22px; font-weight:bold;"></p>
+
+
+
+<body style="text-align: center;">
+
+<h1>Encuentra al diferente</h1>
+
+<p>¿Cuál animal es diferente?</p>
+
+<div style="font-size:150px;">
+     🐶🐶🐱🐶
+</div>
+
+<br>
+
+<button style="width:50px; height:50px; fint-size:35px;"
+onclick="document.getElementById('mensaje').innerHTML='¡Correcto!'">
+   🐱
+</button>
+
+<button style="width:50px; height:50px; fint-size:35px;"
+onclick="document.getElementById('mensaje').innerHTML='¡Intentalo otra vez!'">
+   🐶
+</button>
+
+<p id="mensaje" style="font-size:25px; font-weight:bold;"></p>
+
+
+
+<body style="text-align:center;">
+
+<h1 style="color:#333;"> 4. Letras divertidas</h1>
+
+    <p>
+        ¡Aprende las vocales!
+    </p>
+
+    <br>
+
+    <!-- A -->
+    <button
+        style="font-size:70px; background-color:#FFB6C1;
+        border-radius:20px;
+        margin:15px; padding:20px; cursor:pointer;"
+        onclick="alert('A de Árbol 🌳')">
+        A 🌳
+    </button>
+
+    <!-- E -->
+    <button
+        style="font-size:70px; background-color:#FFD93D;
+        border-radius:20px;
+        margin:15px; padding:20px; cursor:pointer;"
+        onclick="alert('E de Estrella ⭐')">
+        E ⭐
+    </button>
+
+    <!-- I -->
+    <button
+        style="font-size:70px; background-color:#B5EAD7;
+        border-radius:20px;
+        margin:15px; padding:20px; cursor:pointer;"
+        onclick="alert('I de Iguana 🦎')">
+        I 🦎
+    </button>
+
+    <!-- O -->
+    <button
+        style="font-size:70px; background-color:#A2D2FF;
+        border-radius:20px;
+        margin:15px; padding:20px; cursor:pointer;"
+        onclick="alert('O de Oso 🐻')">
+        O 🐻
+    </button>
+
+    <!-- U -->
+    <button
+        style="font-size:70px; background-color:#CDB4DB;
+        border-radius:20px;
+        margin:15px; padding:20px; cursor:pointer;"
+        onclick="alert('U de Uvas 🍇')">
+        U 🍇
+    </button>
+
+    <br><br>
+
+    <p>
+        💡¡Haz clic en una vocal para aprender!
+    </p>
+
+</body>
+</html>
+
+
+<style>
+        body {
+            text-align: center;
+        }
+
+        .juego {
+            display: grid;
+            grid-template-columns: repeat(3, 150px);
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .tarjeta {
+            width: 150px;
+            height: 150px;
+            font-size: 60px;
+            background-color: #FFD93D;
+            border: 4px solid #333;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> 5. Memoria de animales</h1>
+
+    <p>
+        Encuentra las parejas de animales 🐶🐱🐰
+    </p>
+
+    <div class="juego">
+
+        <button class="tarjeta" onclick="mostrar(this, '🐶')">❓</button>
+
+        <button class="tarjeta" onclick="mostrar(this, '🐱')">❓</button>
+
+        <button class="tarjeta" onclick="mostrar(this, '🐰')">❓</button>
+
+        <button class="tarjeta" onclick="mostrar(this, '🐱')">❓</button>
+
+        <button class="tarjeta" onclick="mostrar(this, '🐶')">❓</button>
+
+        <button class="tarjeta" onclick="mostrar(this, '🐰')">❓</button>
+
+    </div>
+
+    <script>
+
+        let primera = null;
+        let segunda = null;
+
+        function mostrar(tarjeta, animal) {
+
+            if (tarjeta.innerHTML != "❓") {
+                return;
+            }
+
+            tarjeta.innerHTML = animal;
+
+            if (primera == null) {
+                primera = tarjeta;
+            } else {
+                segunda = tarjeta;
+
+                if (primera.innerHTML == segunda.innerHTML) {
+
+                    alert("¡Encontraste una pareja! 🎉");
+
+                    primera = null;
+                    segunda = null;
+
+                } else {
+
+                    setTimeout(function() {
+
+                        primera.innerHTML = "❓";
+                        segunda.innerHTML = "❓";
+
+                        primera = null;
+                        segunda = null;
+
+                    }, 800);
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>    
+
+ 
+   
+
+
+
+<style>
+    body {
+        text-align: center;
+        margin: 0;
+        padding: 25px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    .instruccion {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .opciones {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .paso {
+        width: 180px;
+        min-height: 180px;
+        background-color: white;
+        border: 3px solid #333;
+        border-radius: 15px;
+        padding: 15px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: 0.2s;
+    }
+
+    .paso:hover {
+        transform: scale(1.05);
+    }
+
+    .emoji {
+        font-size: 70px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #mensaje {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 30px;
+        min-height: 35px;
+    }
+
+    #contador {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    #reiniciar {
+        margin-top: 20px;
+        padding: 12px 25px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        background-color: #81C784;
+        cursor: pointer;
+    }
+
+    #reiniciar:hover {
+        background-color: #66BB6A;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>6. Historia: Plantamos una flor</h1>
+
+<p class="instruccion">
+    Haz clic en las imágenes en el orden correcto para plantar una flor
+</p>
+
+<div class="opciones">
+
+    <button class="paso" onclick="elegir(3)">
+        <span class="emoji">🌱</span>
+        La planta comienza a crecer.
+    </button>
+
+    <button class="paso" onclick="elegir(1)">
+        <span class="emoji">🪴</span>
+        Preparamos la tierra.
+    </button>
+
+    <button class="paso" onclick="elegir(4)">
+        <span class="emoji">🌷</span>
+        La flor crece y florece.
+    </button>
+
+    <button class="paso" onclick="elegir(2)">
+        <span class="emoji">🌰</span>
+        Plantamos la semilla.
+    </button>
+
+</div>
+
+<div id="contador">Paso: 0 de 4</div>
+
+<div id="mensaje"></div>
+
+<button id="reiniciar" onclick="reiniciar()">
+    Reiniciar
+</button>
+
+<script>
+
+let siguiente = 1;
+
+function elegir(numero) {
+
+    const mensaje = document.getElementById("mensaje");
+    const contador = document.getElementById("contador");
+
+    if (numero === siguiente) {
+
+        mensaje.textContent = "✨ ¡Correcto!";
+        mensaje.style.color = "green";
+
+        siguiente++;
+
+        contador.textContent = "Paso: " + (siguiente - 1) + " de 4";
+
+        if (siguiente === 5) {
+            mensaje.textContent = "🎉 ¡Excelente! Completaste la historia.";
+        }
+
+    } else {
+
+        mensaje.textContent = "Inténtalo otra vez";
+        mensaje.style.color = "red";
+    }
+}
+
+function reiniciar() {
+
+    siguiente = 1;
+
+    document.getElementById("mensaje").textContent = "";
+
+    document.getElementById("contador").textContent = "Paso: 0 de 4";
+}
+
+</script>
+
+</body>
+</html>
+
+
+
+      
+
+
+<body style="text-align:center;">
+
+    <h1> 7. ¿Dónde está?</h1>
+
+    <p>¿Dónde está el gato?</p>
+<img src="Imagenes/gato.jpg" width="150">
+
+    <p>
+        Selecciona la respuesta correcta:
+    </p>
+
+    <br>
+
+    <!-- ARRIBA -->
+    <button
+        onclick="alert('¡Correcto! 🎉')"
+        style="font-size:50px; width:180px; height:150px;
+        background-color:#A2D2FF; 
+        border-radius:20px; margin:15px; cursor:pointer;">
+        ⬆️<br>
+        Arriba
+    </button>
+
+    <!-- ABAJO -->
+    <button
+        onclick="alert('Inténtalo otra vez')"
+        style="font-size:50px; width:180px; height:150px;
+        background-color:#FFB6C1; 
+        border-radius:20px; margin:15px; cursor:pointer;">
+        ⬇️<br>
+        Abajo
+    </button>
+
+    <!-- DENTRO -->
+    <button
+        onclick="alert('Inténtalo otra vez')"
+        style="font-size:50px; width:180px; height:150px;
+        background-color:#FFD93D; 
+        border-radius:20px; margin:15px; cursor:pointer;">
+        📦<br>
+        Dentro
+    </button>
+
+    <!-- FUERA -->
+    <button
+        onclick="alert('Inténtalo otra vez')"
+        style="font-size:50px; width:180px; height:150px;
+        background-color:#B5EAD7; 
+        border-radius:20px; margin:15px; cursor:pointer;">
+        🚪<br>
+        Fuera
+    </button>
+
+</body>
+</html>
+
+
+
+
+<body style="text-align:center;">
+
+    <h1> 8. Hábitos saludables</h1>
+
+    <p>
+        Haz clic en los hábitos saludables:
+    </p>
+
+    <br>
+
+    <!-- LAVARSE LAS MANOS -->
+    <button
+        onclick="alert('¡Muy bien! Lavarse las manos es un hábito saludable. 🧼👏')"
+        style="font-size:65px; width:220px; height:180px;
+        background-color:#A2D2FF; 
+        border-radius:20px; margin:15px; cursor:pointer;">
+        🧼<br>
+        👐
+    </button>
+
+    <!-- CEPILLARSE LOS DIENTES -->
+    <button
+        onclick="alert('¡Muy bien! Cepillarse los dientes ayuda a cuidarlos. 🦷✨')"
+        style="font-size:65px; width:220px; height:180px;
+        background-color:#B5EAD7; 
+        border-radius:20px; margin:15px; cursor:pointer;">
+        🪥<br>
+        🦷
+    </button>
+
+    <!-- COMER FRUTAS -->
+    <button
+        onclick="alert('¡Muy bien! Comer frutas es un hábito saludable. 🍎🍌')"
+        style="font-size:65px; width:220px; height:180px;
+        background-color:#FFD93D; 
+        border-radius:20px; margin:15px; cursor:pointer;">
+        🍎<br>
+        🍌
+    </button>
+
+    <!-- BEBER AGUA -->
+    <button
+        onclick="alert('¡Muy bien! Beber agua ayuda a mantenernos hidratados. 💧')"
+        style="font-size:65px; width:220px; height:180px;
+        background-color:#CDB4DB; 
+        border-radius:20px; margin:15px; cursor:pointer;">
+        🥤<br>
+        💧
+    </button>
+
+    <br><br>
+
+    <p>
+        ¡Cuidar tu salud es importante!
+    </p>
+
+</body>
+</html>
+
+
+
+<body style="text-align:center;">
+
+    <h1> 9. Sonidos y adivinanzas</h1>
+
+    <p>
+        Adivina el animal
+    </p>
+
+    <div style="background-color:white; 
+                border-radius:20px; padding:25px;
+                width:70%; margin:auto;">
+
+        <p>
+            🐾 Tengo cuatro patas,<br>
+            digo "miau" y me gusta dormir.<br>
+            ¿Quién soy?
+        </p>
+
+    </div>
+
+    <br>
+
+    <!-- GATO: CORRECTO -->
+    <button
+        onclick="alert('🎉 ¡Correcto! Es un gato 🐱')"
+        style="font-size:70px; width:160px; height:160px;
+        background-color:#FFB6C1;
+        border-radius:20px; margin:15px; cursor:pointer;">
+        🐱
+    </button>
+
+    <!-- PERRO -->
+    <button
+        onclick="alert('Inténtalo otra vez')"
+        style="font-size:70px; width:160px; height:160px;
+        background-color:#A2D2FF; 
+        border-radius:20px; margin:15px; cursor:pointer;">
+        🐶
+    </button>
+
+    <!-- VACA -->
+    <button
+        onclick="alert('Inténtalo otra vez')"
+        style="font-size:70px; width:160px; height:160px;
+        background-color:#B5EAD7; 
+        border-radius:20px; margin:15px; cursor:pointer;">
+        🐮
+    </button>
+
+    <!-- CONEJO -->
+    <button
+        onclick="alert('Inténtalo otra vez')"
+        style="font-size:70px; width:160px; height:160px;
+        background-color:#FFD93D;
+        border-radius:20px; margin:15px; cursor:pointer;">
+        🐰
+    </button>
+
+    <br><br>
+
+    <p>
+        💡¡Lee la adivinanza y elige la respuesta!
+    </p>
+
+</body>
+</html>
+
+<h2><a href="reto.html">Ir a reto final</a></h2>
+</body>
+</html>

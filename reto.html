@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi reto final</title>
+</head>
+
+<body style="background-color:#E8F8FF; text-align:center;">
+
+    <h1>🏆 10. Mi reto final</h1>
+
+    <p>
+        ¡Completa las 5 preguntas!
+    </p>
+
+    <p id="mensaje" style="font-size:20px; font-weight:bold;">
+        Pregunta 1: Selecciona el color celeste
+    </p>
+
+    <br>
+
+    <!-- COLOR -->
+    <div id="pregunta1">
+
+        <button
+            onclick="respuesta(1, true)"
+            style="font-size:60px; width:140px; height:140px;
+            background-color:#A2D2FF; border:4px solid #333;
+            border-radius:20px; margin:10px; cursor:pointer;">
+            💙
+        </button>
+
+        <button
+            onclick="respuesta(1, false)"
+            style="font-size:60px; width:140px; height:140px;
+            background-color:#FFD93D; border:4px solid #333;
+            border-radius:20px; margin:10px; cursor:pointer;">
+            💛
+        </button>
+
+        <button
+            onclick="respuesta(1, false)"
+            style="font-size:60px; width:140px; height:140px;
+            background-color:#FF4D6D; border:4px solid #333;
+            border-radius:20px; margin:10px; cursor:pointer;">
+            ❤️
+        </button>
+
+    </div>
+
+
+    <!-- FIGURA -->
+    <div id="pregunta2" style="display:none;">
+
+        <button
+            onclick="respuesta(2, false)"
+            style="font-size:70px; width:150px; height:150px;
+            background-color:#FFD93D; border:4px solid #333;
+            border-radius:50%; margin:10px; cursor:pointer;">
+            
+        </button>
+
+        <button
+            onclick="respuesta(2, true)"
+            style="font-size:70px; width:150px; height:150px;
+            background-color:#A2D2FF; border:4px solid #333;
+            margin:10px; cursor:pointer;">
+            
+        </button>
+
+        <button
+            onclick="respuesta(2, false)"
+    style="
+        width:150px;
+        height:150px;
+        background-color:#FFB6C1;
+        border:4px solid #333;
+        clip-path:polygon(50% 0%, 0% 100%, 100% 100%);
+        margin:10px;
+        cursor:pointer;
+    ">
+
+        </button>
+
+    </div>
+
+
+    <!-- NÚMERO -->
+    <div id="pregunta3" style="display:none;">
+
+        <button
+            onclick="respuesta(3, false)"
+            style="font-size:60px; width:140px; height:140px;
+            background-color:#B5EAD7; border:4px solid #333;
+            border-radius:20px; margin:10px; cursor:pointer;">
+            3
+        </button>
+
+        <button
+            onclick="respuesta(3, true)"
+            style="font-size:60px; width:140px; height:140px;
+            background-color:#FFD93D; border:4px solid #333;
+            border-radius:20px; margin:10px; cursor:pointer;">
+            5
+        </button>
+
+        <button
+            onclick="respuesta(3, false)"
+            style="font-size:60px; width:140px; height:140px;
+            background-color:#A2D2FF; border:4px solid #333;
+            border-radius:20px; margin:10px; cursor:pointer;">
+            8
+        </button>
+
+    </div>
+
+
+    <!-- VOCAL -->
+    <div id="pregunta4" style="display:none;">
+
+        <button
+            onclick="respuesta(4, true)"
+            style="font-size:60px; width:140px; height:140px;
+            background-color:#FFB6C1; border:4px solid #333;
+            border-radius:20px; margin:10px; cursor:pointer;">
+            A
+        </button>
+
+        <button
+            onclick="respuesta(4, false)"
+            style="font-size:60px; width:140px; height:140px;
+            background-color:#B5EAD7; border:4px solid #333;
+            border-radius:20px; margin:10px; cursor:pointer;">
+            B
+        </button>
+
+        <button
+            onclick="respuesta(4, false)"
+            style="font-size:60px; width:140px; height:140px;
+            background-color:#FFD93D; border:4px solid #333;
+            border-radius:20px; margin:10px; cursor:pointer;">
+            C
+        </button>
+
+    </div>
+
+
+    <!-- ANIMAL -->
+    <div id="pregunta5" style="display:none;">
+
+        <button
+            onclick="respuesta(5, false)"
+            style="font-size:60px; width:140px; height:140px;
+            background-color:#A2D2FF; border:4px solid #333;
+            border-radius:20px; margin:10px; cursor:pointer;">
+            🐶
+        </button>
+
+        <button
+            onclick="respuesta(5, true)"
+            style="font-size:60px; width:140px; height:140px;
+            background-color:#FFB6C1; border:4px solid #333;
+            border-radius:20px; margin:10px; cursor:pointer;">
+            🐱
+        </button>
+
+        <button
+            onclick="respuesta(5, false)"
+            style="font-size:60px; width:140px; height:140px;
+            background-color:#B5EAD7; border:4px solid #333;
+            border-radius:20px; margin:10px; cursor:pointer;">
+            🐰
+        </button>
+
+    </div>
+
+
+    <script>
+
+        let preguntaActual = 1;
+
+        function respuesta(numero, correcta) {
+
+            if (correcta) {
+
+                if (numero < 5) {
+
+                    preguntaActual++;
+
+                    document.getElementById("pregunta" + numero).style.display = "none";
+
+                    document.getElementById("pregunta" + preguntaActual).style.display = "block";
+
+
+                    if (preguntaActual == 2) {
+                        document.getElementById("mensaje").innerHTML =
+                        "✅ ¡Correcto! Pregunta 2: Selecciona el cuadrado ";
+                    }
+
+                    if (preguntaActual == 3) {
+                        document.getElementById("mensaje").innerHTML =
+                        "✅ ¡Correcto! Pregunta 3: Selecciona el número 5 ";
+                    }
+
+                    if (preguntaActual == 4) {
+                        document.getElementById("mensaje").innerHTML =
+                        "✅ ¡Correcto! Pregunta 4: Selecciona la vocal A ";
+                    }
+
+                    if (preguntaActual == 5) {
+                        document.getElementById("mensaje").innerHTML =
+                        "✅ ¡Correcto! Pregunta 5: Selecciona el gato ";
+                    }
+
+                } else {
+
+                    document.getElementById("mensaje").innerHTML =
+                    "🎉🏆 ¡FELICIDADES! 🏆🎉<br>Completaste todo el reto final.";
+                }
+
+            } else {
+
+                document.getElementById("mensaje").innerHTML =
+                "Inténtalo otra vez. ¡Tú puedes!";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+
+<h2><a href="index.html">Inicio</a></h2>
